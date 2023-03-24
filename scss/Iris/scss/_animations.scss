@@ -1,0 +1,48 @@
+// Animations
+@keyframes loading {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes slide-down {
+  0% {
+    opacity: 0;
+    transform: translateY(-$unit-8);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes orbit {
+  0% {
+    transform: translate3d(-50%, -50%, 0) rotateZ(0);
+  }
+  100% {
+    transform: translate3d(-50%, -50%, 0) rotateZ(-360deg);
+  }
+}
+
+@keyframes orbit3d {
+  0% {
+    transform: translate3d(-50%, -50%, 0) rotateZ(0);
+  }
+  100% {
+    transform: translate3d(-50%, -50%, 0) rotateZ(-360deg);
+  }
+}
+
+@keyframes rotation3d {
+  0% {
+    transform: rotateX(-90deg) rotateY(360deg) rotateZ(0);
+  }
+  100% {
+    transform: rotateX(-90deg) rotateY(0) rotateZ(0);
+  }
+}
+

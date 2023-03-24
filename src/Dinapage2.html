@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Black Holes</title>
+        <meta name="author" content="Dina Boshnaq" />
+        <meta name="description" content="Black Holes page of aceSpace website">
+        <link rel="apple-touch-icon" sizes="180x180" href="assets/icons/apple-touch-icon.png">
+        <link rel="icon" type="image/png" sizes="32x32" href="assets/icons/favicon-32x32.png">
+        <link rel="icon" type="image/png" sizes="16x16" href="assets/icons/favicon-16x16.png">
+        <link rel="manifest" href="assets/icons/site.webmanifest">
+        <link rel="mask-icon" href="assets/icons/safari-pinned-tab.svg" color="#5bbad5">
+        <meta name="msapplication-TileColor" content="#da532c">
+        <meta name="theme-color" content="#ffffff">
+        <link rel="stylesheet" href="css/style.css" />
+    </head>
+
+    <body class="dina2">
+        <!-- Logo and navbar from the index page -->
+        <header>
+            <nav class="navbar navbar-expand-lg navbar-light bg-light w-100">
+                <div class="container-fluid">
+                    <a href="index.html">
+                        <img src="assets/logo.svg" alt="aceSpace logo" width="100" height="100" id="logo">
+                    </a>
+                    <a class="navbar-brand" href="index.html" id="titleOfWebpage">aceSpace</a>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+                            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                            <li class="nav-item">
+                                <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="Irispage1.html">Solar System</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="Dinapage1.html">Moon</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="Dinapage2.html">Black Holes</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="Ingridpage1.html">Stars</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="Irispage2.html">Humans in space</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="Manikpage1.html">Rockets</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="Manikpage2.html">Myths</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="Ingridpage2.html">Industry</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+        </header>
+
+        <!-- Reading progress bar -->
+        <!-- The functionality is through javascript -->
+        <div id="reading-progress"><div id="reading-progress-fill"></div></div>
+
+        <!-- up button -->
+        <button onclick="topFunction()" id="upBtn" title="Go to top"><i class="fa-solid fa-angle-up"></i></button>
+
+        <!-- Main part of the black holes page that contains the actual content -->
+        <main>
+            <!-- div 1: contains the main heading and a button 'learn more' to view the black holes definition -->
+            <div id="title">
+                <h1>Back Holes</h1>
+                <h2>What is a Black Hole?</h2>
+                <!-- Learn More button -->
+                <div id="container">
+                    <button class="learn-more" id="learnMore" onclick="window.location.href='#paragraphDefinition';">
+                        <span class="circle" aria-hidden="true">
+                            <span class="icon arrow"></span>
+                        </span>
+                        <span class="button-text">Learn More</span>
+                    </button>
+                </div>
+            </div>
+            <!-- End of div 1 -->
+
+            <!-- Start of div 2 -->
+            <!-- This div contains an image of a black hole and a definition that is placed on top of it -->
+            <!-- The definition doesn't show initially, when the user clicks the learn more button in the first div it shows -->
+            <div id="definition">
+                <img src="assets/Dina/blackHole2.jpg" alt="">
+                <p id="paragraphDefinition">
+                    A Black Hole is basically a vacuum in space, but not just any vacuum, a super duper strong one. It is a region of spacetime where the gravity is extremely strong to the point that nothing (literally nothing) can escape from it, not even light! It is not like a planet or star where there is a surface, rather this region could be described as one where matter collapsed on itself. Simply put, large mass in a tiny area equals insanely strong gravity.
+                </p>
+            </div>
+            <!-- End of div 2 -->
+
+            <!-- Start of div 3 -->
+            <!-- Cards using bootstrap are implemented here -->
+            <!-- This div is for 2 cards, 1 card is about how black holes are formed and the other is about the types of black holes -->
+            <div class="d-flex row justify-content-around mt-5">
+                <!-- card 1 -->
+                <!-- Formation of black holes -->
+                <div class="card col-5" style="width: 40rem;">
+                    <img src="assets/Dina/starDead.jpg" class="card-img-top mt-2" id="starDead" alt="Death of a Star">
+                    <div class="card-body">
+                        <h3 class="card-title">How are black holes formed?</h3>
+                        <p class="card-text">
+                            In simple terms, when a star dies a black hole forms.
+                            Sounds like a myth from a dark fairytale, but no that’s real.
+                            Most black holes form from what remains of a dead large star
+                            in something called a supernova explosion.
+                            When the center of an extremely massive star collapses
+                            in upon itself, a Stellar black hole is formed.
+                            So basically a black hole is a zombie star.
+                        </p>
+                    </div>
+                </div>
+
+                <!-- card 2 -->
+                <!-- Types of Black Holes -->
+                <div class="card col-5" style="width: 40rem;">
+                    <img src="assets/Dina/types.jpg" class="card-img-top mt-2" alt="A type of black holes">
+                    <div class="card-body">
+                        <h3 class="card-title">What are the types of black holes?</h3>
+                        <ol class="card-text">
+                            <li>Stellar</li>
+                            <li>Intermediate</li>
+                            <li>Supermassive</li>
+                            <li>Miniature</li>
+                        </ol>
+                    </div>
+                </div>
+            </div>
+            <!-- End of div 3 -->
+
+            <!-- Start of div 4 -->
+            <!-- This div is about what would happen if something went inside a black hole -->
+            <!-- It contains text and images that change every 3 seconds -->
+            <!-- Image changing is done via javascript -->
+            <!-- The layout is text then images over each other on small and medium screens -->
+            <!-- The layout is side by side on large screens -->
+            <!-- The user can click on an image to stop at it, they can double-click to get the images to switch again -->
+            <div class="d-flex row mt-5 justify-content-around align-items-center mx-5" id="enter">
+                <div class="col-lg-6 col-md-12">
+                    <h2>What would happen if something were to go in a black hole?</h2>
+                    <p>Have you ever wondered what would happen if let's say a human or a cat or even earth would go in a black hole?
+                        There are a lot of guesses as to what lies behind a black hole, some say it’s a portal to a parallel universe,
+                        some say it’s to heaven (well, either way you’d probably be dead, so the second has more likeliness).
+                        Anyway, physics on the other hand says this: “A black hole would stretch an astronaut's body into a thin ribbon”.
+                        In other words you’re also dead according to physics. So the lesson here is: Don’t go in a black hole.
+                        The cat would probably have same doom fall upon it, and earth would cease to exist anymore.</p>
+                </div>
+                <img src="assets/Dina/enterBlackHole.png" alt="" id="targetImage" onclick="stop();" ondblclick="restart();">
+                <p id="instructions">PS: Click the image to stop on it, double click to make the images move again.</p>
+            </div>
+            <!-- End of div 4 -->
+
+            <!-- Start of div 5 -->
+            <!-- This div contains 2 divs -->
+            <div class="d-flex row justify-content-around mx-5 mt-5">
+                <!-- 1 div is short question about how far the nearest black hole is -->
+                <!-- The user can guess first then click on a button to see the answer -->
+                <!-- The answer is shown in a card that collapses vertically -->
+                <div id="close" class="col-lg-5">
+                    <h2>Can you guess how far is the nearest black hole to us?</h2>
+                    <h3>Guess First, then click the button to view the answer!</h3>
+                    <h4>No cheating!</h4>
+                    <p>
+                        <button class="btn btn-light" type="button" data-bs-toggle="collapse" data-bs-target="#answer" aria-expanded="false">
+                            View Answer
+                        </button>
+                    </p>
+                    <div style="min-height: 120px;">
+                        <div class="collapse collapse" id="answer">
+                            <div class="card card-body" style="width: 100%;">
+                                It is 1,000 light-years away! 1 light year = 9 trillion km. (Trillion in numbers to make you realize the size: 1,000,000,000)
+                                “In 2020, a team of astronomers with the European Southern Observatory (ESO)
+                                discovered the closest black hole to Earth in the HR 6819 system, just 1,000
+                                light-years away, only to have other scientists dispute the findings.”
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- The other div is to display an image of a real black hole with text commenting about it -->
+                <div id="real" class="col-lg-5">
+                    <h2>Here's a real picture of a black hole:</h2>
+                    <img src="assets/Dina/blackHole.jfif" alt="real black hole">
+                    <p>"In April 2019, astronomers announced to the world that they had done the unthinkable:
+                        they had managed to photograph - for the very first time - a black hole.
+                        The black hole in question is about 6.5 million times the mass of the Sun and resides
+                        in galaxy M87, 55 million lightyears from Earth." - BBC Sky at Night Magazine</p>
+                </div>
+            </div>
+            <!-- End of div 5 -->
+        </main>
+        <!-- End of the main part of the webpage -->
+
+
+
+        <!-- Footer -->
+
+        <footer class="bg-light text-center text-white">
+            <!-- Grid container -->
+            <div class="container p-4 pb-0">
+                <!-- Section: Social media -->
+                <section class="mb-4 icons">
+                    <!-- Facebook -->
+                    <a
+                        class="btn btn-floating m-1"
+                        style="background-color: #3b5998;"
+                        href="https://www.facebook.com/DwayneJohnson"
+                        role="button"
+                    ><i class="fab fa-facebook-f"></i
+                    ></a>
+
+                    <!-- Twitter -->
+                    <a
+                        class="btn btn-floating m-1"
+                        style="background-color: #55acee;"
+                        href="https://twitter.com/elonmusk?ref_src=twsrc%5Egoogle%7Ctwcamp%5Eserp%7Ctwgr%5Eauthor"
+                        role="button"
+                    ><i class="fab fa-twitter"></i
+                    ></a>
+
+                    <!-- Google -->
+                    <a
+                        class="btn btn-floating m-1"
+                        style="background-color: #dd4b39;"
+                        href="assets/catmeme.png"
+                        role="button"
+                    ><i class="fab fa-google"></i
+                    ></a>
+
+                    <!-- Instagram -->
+                    <a
+                        class="btn btn-floating m-1"
+                        style="background-color: #ac2bac;"
+                        href="https://www.instagram.com/dualipa/?hl=en"
+                        role="button"
+                    ><i class="fab fa-instagram"></i
+                    ></a>
+
+                    <!-- Linkedin -->
+                    <a
+                        class="btn btn-floating m-1"
+                        style="background-color: #0082ca;"
+                        href="https://www.linkedin.com/in/williamhgates?original_referer=https%3A%2F%2Fwww.google.com%2F"
+                        role="button"
+                    ><i class="fab fa-linkedin-in"></i
+                    ></a>
+                    <!-- Github -->
+                    <a
+                        class="btn btn-floating m-1"
+                        style="background-color: #000000;"
+                        href="assets/spongebobmeme.png"
+                        role="button"
+                    ><i class="fab fa-github"></i
+                    ></a>
+                </section>
+                <!-- Section: Social media -->
+            </div>
+            <!-- Grid container -->
+
+            <!-- Copyright -->
+            <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2);">
+                ©
+                <script>document.write(new Date().getFullYear())</script>
+                <a href="https://www.thomasmore.be/">Thomas More</a>
+                <span>Author: Dina Boshnaq</span>
+            </div>
+        </footer>
+
+<!--        <canvas id="particle"></canvas>-->
+        <script src="js/bootstrap.bundle.min.js"></script>
+        <script src="js/Dina2.js"></script>
+    </body>
+</html>

@@ -1,0 +1,361 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Industry</title>
+        <meta name="author" content="Ingrid hansen" />
+        <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+        <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+        <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+        <link rel="manifest" href="/site.webmanifest">
+        <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5">
+        <meta name="msapplication-TileColor" content="#da532c">
+        <meta name="theme-color" content="#ffffff">
+        <link rel="stylesheet" href="./css/style.css">
+    </head>
+    <body class="ingrid">
+        <header>
+            <nav class="navbar navbar-expand-lg navbar-light bg-light w-100">
+                <div class="container-fluid">
+                    <a href="index.html">
+                        <img src="assets/logo.svg" alt="aceSpace logo" width="100" height="100" id="logo">
+                    </a>
+                    <a class="navbar-brand" href="index.html" id="titleOfWebpage">aceSpace</a>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+                            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                            <li class="nav-item">
+                                <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="Irispage1.html">Solar System</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="Dinapage1.html">Moon</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="Dinapage2.html">Black Holes</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="Ingridpage1.html">Stars</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="Irispage2.html">Humans in space</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="Manikpage1.html">Rockets</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="Manikpage2.html">Myths</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="Ingridpage2.html">Industry</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+        </header>
+        <main>
+            <div class="container industry ">
+                <div class="introduction text-center">
+                    <h1 class="my-3 text-primary">
+                        Industry
+                    </h1>
+                    <p class="ps-auto pe-auto">
+                        As technology progresses humans have found various ways to industrialize space. That's right, not even space can
+                        escape capitalism. The global space industry generates a revenue of $350 billion dollars annually and there are
+                        estimations that by 2040 this will increase to more than $1 trillion, if not more.
+                        <img src="assets/Ingrid/2019_SCK.jpg" alt="Satellite in space" class="mw-100 my-4 w-50 h-50 d-block mx-auto">
+                    </p>
+                    <p>Below you can find several topics within the space industry.</p>
+                </div>
+                <div class="infocards row">
+
+                    <div id="filterbuttons" class="d-flex justify-content-center justify-content-md-end mb-3 mt-5">
+                        <button class="btn active text-standard filter" id="all">All</button>
+                        <button class="btn text-standard filter" id="communication">Communication</button>
+                        <button class="btn text-standard filter" id="tourism">Tourism</button>
+                        <button class="btn text-standard filter" id="capital">Capital</button>
+                    </div>
+                    <div class="row">
+                        <div class="card filter communication mx-auto m-4 col-md-4">
+                            <img src="assets/Ingrid/smallerSatellite.jpg" class="card-img-top w-100" alt="...">
+                            <div class="card-body">
+                                <h5 class="card-title text-alternate">Satellites</h5>
+                                <p class="card-text  text-alternate">Satellites are responsible for making many of our day-to-day
+                                    communication
+                                    needs possible.</p>
+                                <button type="button" id="btnSatellite" class="btn btn-main  text-main">Read More
+                                </button>
+                            </div>
+                        </div>
+                        <div class="card filter tourism mx-auto m-4 col-md-4">
+                            <img
+                                src="assets/Ingrid/czNmcy1wcml2YXRlL3Jhd3BpeGVsX2ltYWdlcy93ZWJzaXRlX2NvbnRlbnQvbHIvcGQ0NC02NjEtYWUtMDFfMS5qcGc.jpg"
+                                class="card-img-top w-100" alt="...">
+                            <div class="card-body">
+                                <h5 class="card-title text-alternate">Tourism</h5>
+                                <p class="card-text  text-alternate">Space tourism is a new industry that so far has been exclusive to the
+                                    1% of
+                                    the population.</p>
+                                <button type="button" id="btnTourism" class="btn text-main">Read More
+                                </button>
+                            </div>
+                        </div>
+                        <div class="card filter capital mx-auto m-4 col-md-4">
+                            <img src="assets/Ingrid/satellite-693204_960_720.jpg" class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <h5 class="card-title text-alternate">SpaceX</h5>
+                                <p class="card-text  text-alternate">SpaceX is a private company that designs, builds, and launches
+                                    spacecrafts.</p>
+                                <button type="button" id="btnSpacex" class="btn text-main">Read More
+                                </button>
+                            </div>
+                        </div>
+                        <div class="card filter capital mx-auto m-4 col-md-4">
+                            <img src="assets/Ingrid/smallermeteor.jpg"
+                                 class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <h5 class="card-title text-alternate">Meteor Mining</h5>
+                                <p class="card-text  text-alternate">Meteor mining is a hypothetical industry believed to have great future
+                                    potential.</p>
+                                <button type="button" id="btnMeteor" class="btn text-main">Read More
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card filter capital mx-auto m-4 col-md-4">
+                        <img src="assets/Ingrid/16645222450_17cc79671e_b.jpg" class="card-img-top w-100" alt="Garbage in space">
+                        <div class="card-body position-relative">
+                            <h5 class="card-title text-alternate">Space Junk</h5>
+                            <p class="card-text  text-alternate">There is over 200.000 pieces of space junk in the earths low orbit
+                                threatening to make the low atmosphere unusable. </p>
+                            <button type="button" id="btnSpaceJunk" class="btn btn-main  text-main">Read More
+                            </button>
+                        </div>
+                    </div>
+                    <article>
+                        <div id="satelliteOverlay" class="overlay">
+                            <button type="button" class="btn-primary text-main position-fixed m-3 exit" id="closeSatellite">Close</button>
+                            <div class="satelliteContent bg-secondary mt-5 row">
+                                <h2 class="m-3 pt-3">Satellites</h2>
+                                <img src="assets/Ingrid/conceptSat.jpg" alt="concept art of a satellite" class=" col-md-4">
+                                <p class="m-3 col-md-4">A satellite is an object that orbits around a star or a planet. As an example, the
+                                    moon is a
+                                    satellite that
+                                    orbits around the earth. However, when we speak about satellites we often mean satellites of a
+                                    mechanical
+                                    nature. Humans have launched more than 6,500 satellites into space! Half of these satellites are
+                                    inactive,
+                                    but
+                                    the rest responsible for providing several services used in our day-to-day lives.</p>
+
+                                <p class="m-3">Communication satellites are the most common type of artificial satellite. They
+                                    provide services
+                                    for television, telephone service, radio, internet, and also military applications. There are currently
+                                    2,224
+                                    communication satellites orbiting Earth connecting the world together.</p>
+                                <p class="m-3">The worlds entire GPS(Global Positioning System) system is created by 27 satellites.
+                                    They are
+                                    responsible for
+                                    tracing your location while using services such as Google Maps. Without them, we would all be stuck
+                                    using
+                                    plain
+                                    old paper maps while on the road.</p>
+                            </div>
+
+                        </div>
+                    </article>
+                    <article>
+                        <div id="tourismOverlay" class="overlay">
+                            <button type="button" class="btn-primary text-main m-3 exit" id="closeTourism">Close</button>
+                            <div class="tourismContent bg-secondary mt-5 text-center">
+                                <h2 class="m-3 pt-3 text-center">Tourism</h2>
+                                <p class="m-3 w-75" id="tourismText">Space tourism might sound like a
+                                    futuristic farfetched
+                                    idea, but it has
+                                    actually
+                                    been
+                                    around
+                                    since
+                                    the early 2000s. Russia sold the free seats on their spacecrafts headed for the international space
+                                    station
+                                    for
+                                    US$20-25 million per trip. Tourism was believed to be one of the earliest markets to emerge from the
+                                    growth
+                                    of
+                                    the space industry. However, as the size of the crew headed for the international space station
+                                    increased,
+                                    Russia could no longer sell the available seats and the tourism halted. In 2019 NASA announced that
+                                    private
+                                    astronauts would be allowed to travel to the international space station. The price for this is
+                                    US$35.000
+                                    per
+                                    day at the station, with the cost of the trip there and back being at US$50 million. It is clear that
+                                    for
+                                    now
+                                    commercial space travel is reserved for the top 1% in the world, but maybe some day the opportunity will
+                                    become
+                                    more accessible.</p>
+                                <img src="assets/Ingrid/spacetravel.png" alt="Space travelers" class="w-100 h-50">
+
+                            </div>
+
+                        </div>
+                    </article>
+                    <article>
+                        <div id="spacexOverlay" class="overlay">
+                            <button type="button" class="btn-primary text-main position-fixed m-3 exit" id="closeSpacex">Close</button>
+                            <div class="spacexContent bg-secondary mt-5">
+                                <h2 class="m-3 pt-3">SpaceX</h2>
+                                <img src="assets/Ingrid/40126461411_aabc643fd8_b.jpg" alt="Space travelers" class="mx-md-auto">
+                                <p class="m-3">
+                                    SpaceX is an American commercial space company funded by Elon Musk. The goal of the company is to reduce
+                                    the
+                                    cost of space transportation and eventually colonize Mars. The company produces heavy launch vehicles,
+                                    rocket
+                                    engines, and communication satellites. Currently, the company is developing a satellite constellation
+                                    system
+                                    named Starlink in order to provide commercial internet access. As of May 2022 the constellation has over
+                                    2400
+                                    small satellites within the system. SpaceX is also one of the companies that offer paid commercial
+                                    spaceflights.
+                                    It is the first private company to launch, orbit, and recover a spacecraft and focuses on developing
+                                    reusable
+                                    spacecrafts.
+                                </p>
+                            </div>
+
+                        </div>
+                    </article>
+                    <article>
+                        <div id="meteorOverlay" class="overlay">
+                            <div class="overlayContent">
+                                <button type="button" class="btn-primary text-main position-fixed m-3 exit" id="closeMeteor">Close</button>
+                                <div class="spacexContent bg-secondary mt-5">
+                                    <h2 class="m-3 pt-3">Asteroid Mining</h2>
+                                    <img src="assets/Ingrid/miningforgold.svg" alt="Mining" class="mx-md-auto">
+                                    <p class="m-3 pb-4">
+                                        Asteroids Mining is an industry believed to have great promise in the future. Many asteroids contain
+                                        large
+                                        amounts of metal, some which are rare and valuable. Limitations in technology as well as the high
+                                        cost
+                                        of
+                                        space travel prevents the industry from being viable. However, the industry is not abandoned, the
+                                        players
+                                        within the field have instead set their sights on long-term, distant goals. Several asteroids have
+                                        been
+                                        identified and analyzed proving they contain metals such as nickel, gold, and platinum. An S-type
+                                        asteroid
+                                        of a small size contains around 650.000kg of metal. The larger M-type asteroid contains 10 times
+                                        more
+                                        metal
+                                        than the S-type.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </article>
+                    <article>
+                        <div id="spaceJunkOverlay" class="overlay">
+                            <button type="button" class="btn-primary text-main position-fixed m-3 exit" id="closeSpaceJunk">Close</button>
+                            <div class="tourismContent bg-secondary mt-5 text-center">
+                                <h2 class="m-3 pt-3 text-center">Space Junk</h2>
+                                <p class="m-3" id="spaceJunkText">Space junk may seem like a silly problem, but it has caused several issues
+                                    for the space industry. Due to the speed the earth orbits at, if a spacecraft makes contact with space
+                                    junk it can cause a significant amount of damage. In fact damage through space junk has caused projects
+                                    to be abandoned, creating more space junk in an endless circle. Collisions could start chain reactions
+                                    taking down more satellites. It can take centuries before the junk
+                                    returns to earth.</p>
+                                <p class="m-">Measurers are being taken to prevent the creating of more space junk, but not much can be
+                                    currently done
+                                    to remove the junk from earths orbit.</p>
+                                <img src="assets/Ingrid/S4-space-junk-045.jpg" alt="Space junk" class="w-100">
+
+                            </div>
+
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </main>
+        <footer class="bg-light text-center text-white">
+            <!-- Grid container -->
+            <div class="container p-4 pb-0">
+                <!-- Section: Social media -->
+                <section class="mb-4 icons">
+                    <!-- Facebook -->
+                    <a
+                        class="btn btn-floating m-1"
+                        style="background-color: #3b5998;"
+                        href="https://www.facebook.com/DwayneJohnson"
+                        role="button"
+                    ><i class="fab fa-facebook-f"></i
+                    ></a>
+
+                    <!-- Twitter -->
+                    <a
+                        class="btn btn-floating m-1"
+                        style="background-color: #55acee;"
+                        href="https://twitter.com/elonmusk?ref_src=twsrc%5Egoogle%7Ctwcamp%5Eserp%7Ctwgr%5Eauthor"
+                        role="button"
+                    ><i class="fab fa-twitter"></i
+                    ></a>
+
+                    <!-- Google -->
+                    <a
+                        class="btn btn-floating m-1"
+                        style="background-color: #dd4b39;"
+                        href="assets/catmeme.png"
+                        role="button"
+                    ><i class="fab fa-google"></i
+                    ></a>
+
+                    <!-- Instagram -->
+                    <a
+                        class="btn btn-floating m-1"
+                        style="background-color: #ac2bac;"
+                        href="https://www.instagram.com/dualipa/?hl=en"
+                        role="button"
+                    ><i class="fab fa-instagram"></i
+                    ></a>
+
+                    <!-- Linkedin -->
+                    <a
+                        class="btn btn-floating m-1"
+                        style="background-color: #0082ca;"
+                        href="https://www.linkedin.com/in/williamhgates?original_referer=https%3A%2F%2Fwww.google.com%2F"
+                        role="button"
+                    ><i class="fab fa-linkedin-in"></i
+                    ></a>
+                    <!-- Github -->
+                    <a
+                        class="btn btn-floating m-1"
+                        style="background-color: #000000;"
+                        href="assets/spongebobmeme.png"
+                        role="button"
+                    ><i class="fab fa-github"></i
+                    ></a>
+                </section>
+                <!-- Section: Social media -->
+            </div>
+            <!-- Grid container -->
+
+            <!-- Copyright -->
+            <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2);">
+                ©
+                <script>document.write(new Date().getFullYear())</script>
+                <a href="https://www.thomasmore.be/">Thomas More</a>
+                <p>Author: Ingrid Hansen</p>
+            </div>
+        </footer>
+
+        <script src="js/bootstrap.bundle.min.js"></script>
+        <script src="js/Ingrid2.js"></script>
+    </body>
+</html>

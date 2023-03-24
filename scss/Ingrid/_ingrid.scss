@@ -1,0 +1,246 @@
+@use "sass:color";
+
+$strongPurple: color.mix($background, #8F00FF, $weight: 90%);
+
+
+@mixin depth($shadow: 2px 2px 10px 3px black, $border: 10px, $padding: 7px, $outline: solid gray) {
+  box-shadow: $shadow;
+  border-radius: $border;
+  padding: $padding;
+  outline: $outline;
+}
+
+
+.ingrid {
+  // unique code for student 3
+  // Name student 3: Ingrid Hansen
+
+
+  body {
+    position: relative;
+
+  }
+
+  .container {
+    padding-bottom: 250px;
+
+
+    img {
+      width: 100%;
+    }
+
+
+    .introduction {
+      background-color: color.change($strongPurple, $alpha: 0.5);
+      box-shadow: 5px 5px 3px Black;
+      border-left: solid black;
+
+
+      p {
+        display: inline;
+        width: 50%;
+      }
+
+      img {
+        @include depth(2 2 5 3 black, 7px, 0, solid black)
+      }
+    }
+
+    .overlay {
+      position: fixed;
+      display: none;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      background-color: rgba(0, 0, 0, 0.5);
+      cursor: pointer;
+      overflow: scroll;
+      padding-bottom: 250px;
+
+
+      //Hide scroll bar while still being able to scroll - all major browsers
+      -ms-overflow-style: none;
+      scrollbar-width: none;
+
+      &::-webkit-scrollbar {
+        display: none;
+      }
+
+
+      .exit {
+        @include depth();
+        background: conic-gradient(#d7d7d7, #c3c3c3, #cccccc, #c6c6c6,
+          #d7d7d7, #c3c3c3, #cccccc, #c6c6c6,
+          #d7d7d7, #c3c3c3, #cccccc, #c6c6c6,
+          #d7d7d7, #c3c3c3, #cccccc, #c6c6c6);
+
+
+        &:hover {
+          background: conic-gradient(#edc800, #e3b600, #f3cf00, #ffe800,
+            #edc800, #e3b600, #f3cf00, #ffe800,
+            #edc800, #e3b600, #f3cf00, #ffe800,
+            #edc800, #e3b600, #f3cf00, #ffe800);
+
+        }
+      }
+
+
+    }
+
+    button:hover {
+      outline: $textColor solid;
+    }
+
+
+    .card {
+      display: none;
+      width: 300px;
+      height: 550px;
+      @include depth();
+
+
+      .card-img-top {
+        height: 65%;
+        object-fit: cover;
+        @include depth();
+      }
+
+      .card-body {
+
+        button {
+          background: conic-gradient(#d7d7d7, #c3c3c3, #cccccc, #c6c6c6,
+            #d7d7d7, #c3c3c3, #cccccc, #c6c6c6,
+            #d7d7d7, #c3c3c3, #cccccc, #c6c6c6,
+            #d7d7d7, #c3c3c3, #cccccc, #c6c6c6);
+
+          @include depth();
+
+
+          &:hover {
+            background: conic-gradient(#edc800, #e3b600, #f3cf00, #ffe800,
+              #edc800, #e3b600, #f3cf00, #ffe800,
+              #edc800, #e3b600, #f3cf00, #ffe800,
+              #edc800, #e3b600, #f3cf00, #ffe800);
+          }
+        }
+
+
+      }
+
+
+    }
+
+    .show {
+      display: block;
+    }
+  }
+
+
+  @media screen and (min-width: 790px) {
+    .overlay {
+      width: 60%;
+      margin: 0 auto 0 auto;
+
+
+    }
+    #satelliteOverlay {
+      border-radius: 15px;
+
+      img {
+        width: 50%;
+        @include depth();
+
+      }
+    }
+    .tourismContent {
+      p {
+        left: 120px;
+      }
+    }
+    #spacexOverlay {
+      width: 50%;
+
+      p {
+        padding-bottom: 40px;
+        padding-right: 5px;
+
+
+      }
+
+      img {
+        width: 60%;
+        @include depth();
+        float: right;
+      }
+    }
+
+  }
+}
+
+.ingrid1 {
+
+  #introText {
+    @include depth();
+
+  }
+
+  #starWhat {
+    @include depth();
+  }
+
+  #shootingStar {
+    @include depth();
+
+  }
+
+  .zodiacInfo {
+    display: none;
+
+    .signInfo {
+      @include depth();
+    }
+  }
+
+  .carousel {
+    display: flex;
+    overflow: auto;
+    scroll-snap-type: x mandatory;
+
+    .carousel-inner {
+      .carousel-item {
+        flex-shrink: 0;
+        scroll-snap-align: start;
+
+        img {
+          height: 450px;
+
+        }
+
+      }
+    }
+  }
+
+  @media screen and (min-width: 980px) {
+    .container {
+      width: 950px;
+
+
+      .imageWrap {
+        width: 75%;
+        left: 120px;
+
+      }
+
+      #introduction {
+        img {
+          border-left: solid gray;
+          border-right: solid gray;
+          border-bottom: solid gray;
+        }
+      }
+
+    }
+
+  }
+}

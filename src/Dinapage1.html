@@ -1,0 +1,442 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Moon</title>
+        <meta name="author" content="Dina Boshnaq" />
+        <link rel="stylesheet" href="css/style.css" />
+        <script src="https://code.jquery.com/jquery-3.5.0.js"></script>
+    </head>
+
+    <body class="dina">
+        <!-- Logo and navbar from the index page -->
+        <header>
+            <nav class="navbar navbar-expand-lg navbar-light bg-light w-100">
+                <div class="container-fluid">
+                    <a href="index.html">
+                        <img src="assets/logo.svg" alt="aceSpace logo" width="100" height="100" id="logo">
+                    </a>
+                    <a class="navbar-brand" href="index.html" id="titleOfWebpage">aceSpace</a>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+                            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                            <li class="nav-item">
+                                <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="Irispage1.html">Solar System</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="Dinapage1.html">Moon</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="Dinapage2.html">Black Holes</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="Ingridpage1.html">Stars</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="Irispage2.html">Humans in space</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="Manikpage1.html">Rockets</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="Manikpage2.html">Myths</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="Ingridpage2.html">Industry</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+        </header>
+
+        <!-- Reading progress bar -->
+        <!-- The functionality is through javascript -->
+        <div id="reading-progress"><div id="reading-progress-fill"></div></div>
+
+        <!-- up button -->
+        <button onclick="topFunction()" id="upBtn" title="Go to top"><i class="fa-solid fa-angle-up"></i></button>
+
+
+        <!-- Main part of the moon page that contains the actual content -->
+        <main>
+            <!-- The first cartoon Moon Image and title -->
+            <!-- copyright: -->
+            <!--<a href='https://www.freepik.com/vectors/hiker'>Hiker vector created by upklyak - www.freepik.com</a>-->
+            <div class="background">
+                <img src="assets/Dina/moonBackground.jpg" alt="moon">
+                <div class="centered"><h1>The MOON</h1></div>
+            </div>
+            <!-- First section containing the introduction and definition of the moon next to each other -->
+            <!-- On big screens they are side by side with the image, on small screens the image comes first then the paragraphs -->
+            <section id="first">
+                <div class="container" data-aos="fade-up">
+                    <div class="row">
+                        <!-- Photo of the moon from Pexels: Photo by Pixabay: https://www.pexels.com/photo/photo-of-moon-47367/-->
+                        <div class="col-lg-6 order-1 order-lg-2 d-flex align-items-center" data-aos="fade-left" data-aos-delay="100">
+                            <img src="assets/Dina/moon.png" class="img-fluid" alt="moon">
+                        </div>
+                        <div class="col-lg-6 pt-4 pt-lg-0 order-2 order-lg-1 content d-flex align-items-center row">
+                            <!-- Introduction about the moon -->
+                            <div class="col-12 paragraph">
+                                <h2>Introduction</h2>
+                                <p class="">
+                                    The moon is perhaps one of the most intriguing things for humans when it comes to exploring space.
+                                    It’s a given since it is fairly closer to us than other objects like planets and stars.
+                                    From thinking the moon is made of cheese as kids, to fairy tales about the man on the moon, to thinking the moon is following us.
+                                    Many thoughts came to mind when looking at the moon, but not all of them are true. So what is the moon exactly?
+                                </p>
+                            </div>
+                            <br>
+                            <!-- What is the moon? and where is it? -->
+                            <div class="col-12 paragraph">
+                                <h2>What is the moon? and where is it?</h2>
+                                <p>
+                                    The moon is a natural satellite, not a star nor a planet.
+                                    It is actually the fifth-largest moon in the solar system.
+                                    It is Earth’s only natural satellite, and it orbits around it within 27 days.
+                                    The moon was formed 4.5 billion years ago because of a collision between the earth and another planet.
+                                    Some scientists even think that the moon broke off from Earth after the collision.
+                                    The moon is about 385,000 km away from Earth.
+                                    That is about 30 Earths away. It orbits counterclockwise around the Earth.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!-- End of section 1 -->
+
+            <br>
+            <br>
+
+            <!-- Start of section 2 -->
+            <!-- Section 2 contains 2 divs, one for the components of the moon, and one for the importance of it -->
+            <!-- They are dropdowns that were made using javascript, as well as the arrow icons changing -->
+            <!-- On large screens they are side by side, on small screens one is on top of the other -->
+            <section id="second">
+                <div class="container">
+                    <div class="row">
+                        <!-- What is the moon made of? -->
+                        <div class="col-lg-6 col-12 order-1">
+                            <div class="col-lg-12 paragraph">
+                                <h2 id="title1">What is the moon made of? <i id="arrow1" class="fa-solid fa-angle-down"></i></h2>
+                                <div id="content1" style="display: none">
+                                    <p>
+                                        The moon’s mass = 7.35 x 1022 kg which is about 1.2% of Earth’s mass.
+                                        In other words, Earth weighs 81 times more than the moon. (Earth is fatter lol).
+                                        It consists of the following material (Sadly doesn’t include cheese):
+                                    </p>
+                                    <ol class="p-0">
+                                        <li >43% oxygen</li>
+                                        <li>20% silicon</li>
+                                        <li>19% magnesium</li>
+                                        <li>10% iron</li>
+                                        <li>3% calcium</li>
+                                        <li>3% aluminum</li>
+                                        <li>0.42% chromium</li>
+                                        <li>0.18% titanium</li>
+                                        <li>0.12% manganese</li>
+                                    </ol>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Importance of the moon -->
+                        <div class="col-lg-6 col-12 order-2">
+                            <div class="col-lg-12 paragraph">
+                                <h2 id="title2">Importance of the moon <i id="arrow2" class="fa-solid fa-angle-down"></i></h2>
+                                <div id="content2" style="display: none">
+                                    <p>
+                                        Imagine a wobbly earth, that would be the reality if there was no moon.
+                                        The moon keeps the earth from wobbling violently while it’s spinning.
+                                        This helps keep the climate in check .
+                                        It controls the length of the day and the ocean tides.
+                                        All this affects the biological cycles of lifeforms on our planet.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!-- End of section 2  -->
+
+            <!-- Start of section 3  -->
+            <!-- This section contains the carousel that was made using bootstrap 5 -->
+            <!-- The content is 5 facts about the moon that will be displayed on each slide as a caption with a corresponding image -->
+            <!-- The carousel does not show on small and extra-small screens as it does not fit properly and because it's best for user experience -->
+            <!-- On small and extra-small screens the facts are shown in a list item but 1 at a time -->
+            <!-- Javascript is used to switch between the facts every 10 seconds -->
+            <section id="third">
+                <!-- What are some cool facts about the moon? -->
+                <div id="carouselTitle">
+                    <h2>Is the moon cool?</h2>
+                    <p>
+                        The moon is fairly popular and can be considered a cool kid. Here are some cool facts about the moon:
+                    </p>
+                    <!-- For small and extra-small screens only -->
+                    <p class="d-block d-md-none">The 5 facts switch every 10 seconds:</p>
+                    <ol class="d-block d-md-none">
+                        <li id="fact">The moon is drifting away from the earth!
+                            It is moving around 3.8 cm away from Earth every year.</li>
+                    </ol>
+                </div>
+
+                <!-- For medium and larger screens -->
+                <div id="carouselExampleCaptions" class="carousel slide d-none d-md-block" data-bs-ride="carousel">
+                    <!-- The 5 indicators of the carousel for 5 facts -->
+                    <div class="carousel-indicators">
+                        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="3" aria-label="Slide 4"></button>
+                        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="4" aria-label="Slide 5"></button>
+                    </div>
+
+                    <!-- The content of the carousel -->
+                    <div class="carousel-inner">
+                        <!-- First fact -->
+                        <div class="carousel-item active">
+                            <img src="assets/Dina/moonFromEarth.jpg" class="d-block" alt="Moon from Earth">
+                            <div class="carousel-caption d-none d-md-block">
+                                <h3>Fact #1:</h3>
+                                <p>The moon is drifting away from the earth!
+                                    It is moving around 3.8 cm away from Earth every year.</p>
+                            </div>
+                        </div>
+                        <!-- Second fact -->
+                        <div class="carousel-item">
+                            <img src="assets/Dina/standOnMoon.jpg" class="d-block w-100" alt="An astronaut standing on the moon">
+                            <div class="carousel-caption d-none d-md-block">
+                                <h3>Fact #2:</h3>
+                                <p>The moon has gravity. It is about 1/6 of the Earth’s gravity,
+                                    which means that you would weigh mush less if you stand on the moon.</p>
+                            </div>
+                        </div>
+                        <!-- Third fact -->
+                        <div class="carousel-item">
+                            <img src="assets/Dina/moonOcean2.jpg" class="d-block w-100" alt="The moon and the ocean">
+                            <div class="carousel-caption d-none d-md-block">
+                                <h3>Fact #3:</h3>
+                                <p>The moon has impacts on marine animals.
+                                    From changes in feeding behavior when there is change in the ocean tides,
+                                    to mass spawning specifically at the time of a full moon every year.</p>
+                            </div>
+                        </div>
+                        <!-- Fourth fact -->
+                        <div class="carousel-item">
+                            <img src="assets/Dina/quake.jpg" class="d-block w-100" alt="A quake">
+                            <div class="carousel-caption d-none d-md-block">
+                                <h3>Fact #4:</h3>
+                                <p>Ever heard of Earthquakes? Well, guess what? There is a “Moonquake” too!
+                                    Although it is much weaker than Earthquakes, it last longer (for up to half an hour).</p>
+                            </div>
+                        </div>
+                        <!-- Fifth fact -->
+                        <div class="carousel-item">
+                            <img src="assets/Dina/water.jpg" class="d-block w-100" alt="Water">
+                            <div class="carousel-caption d-none d-md-block">
+                                <h3>Fact #5:</h3>
+                                <p>There is water on the moon! In 2018, NASA confirmed that water ice is present on the surface at the Moon.
+                                    Based on remote observations by radar instruments, the moon has over 600 billion kilograms of water ice.
+                                    That's enough to fill at least 240,000 Olympic-sized swimming pools.
+                                    And according to assistant researcher Shua Li at the University of Hawaii's Institute of Geophysics and Planetology,
+                                    we can actually drink that water!</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- The carousel's controllers -->
+                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Previous</span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Next</span>
+                    </button>
+                </div>
+            </section>
+            <!-- End of section 3 -->
+
+            <!-- Start of section 4 -->
+            <!-- This section is for the moon phases -->
+            <!-- It includes an image and some text about the phases (on top of the image) -->
+            <!-- It also includes an interactive modal for users showing brief information about each moon phase -->
+            <section id="fourth">
+                <!-- Introduction with image and text -->
+                <div id="introMoonPhases">
+                    <div id="text">
+                        <h2>Moon phases</h2>
+                        <p>There are 4 primary moon phases and 4 secondary moon phases</p>
+                    </div>
+                    <img src="assets/Dina/moonPhases.jpg" alt="moon phases">
+                </div>
+                <!-- Instructions for how to use the interactive modal -->
+                <h3>Click on a moon phase to learn more information about it:</h3>
+                <!-- The moon phases of the modal -->
+                <!-- Initially they are grey, they change color when hovering over them -->
+                <div id="moonPhases" class="d-flex justify-content-around">
+                    <button type="button" class="btn btn-lg"
+                            data-bs-toggle="modal"
+                            data-bs-target="#moonInfoModal"
+                            id="firstPhase">
+                        <img src="assets/Dina/1.png" alt="First Phase (Primary): New Moon">
+                    </button>
+                    <button type="button" class="btn btn-lg"
+                            data-bs-toggle="modal"
+                            data-bs-target="#moonInfoModal"
+                            id="secondPhase">
+                        <img src="assets/Dina/2.png" alt="Second Phase (Secondary): Waxing Crescent">
+                    </button>
+                    <button type="button" class="btn btn-lg"
+                            data-bs-toggle="modal"
+                            data-bs-target="#moonInfoModal"
+                            id="thirdPhase">
+                        <img src="assets/Dina/3.png" alt="Third Phase (Primary): First Quarter">
+                    </button>
+                    <button type="button" class="btn btn-lg"
+                            data-bs-toggle="modal"
+                            data-bs-target="#moonInfoModal"
+                            id="fourthPhase">
+                        <img src="assets/Dina/4.png" alt="Fourth Phase (Secondary): Waxing Gibbous">
+                    </button>
+                    <button type="button" class="btn btn-lg"
+                            data-bs-toggle="modal"
+                            data-bs-target="#moonInfoModal"
+                            id="fifthPhase">
+                        <img src="assets/Dina/5.png" alt="Fifth Phase (Primary): Full Moon">
+                    </button>
+                    <button type="button" class="btn btn-lg"
+                            data-bs-toggle="modal"
+                            data-bs-target="#moonInfoModal"
+                            id="sixthPhase">
+                        <img src="assets/Dina/6.png" alt="Sixth Phase (Secondary): Waning Gibbous">
+                    </button>
+                    <button type="button" class="btn btn-lg"
+                            data-bs-toggle="modal"
+                            data-bs-target="#moonInfoModal"
+                            id="seventhPhase">
+                        <img src="assets/Dina/7.png" alt="Seventh Phase (Primary): Last Quarter">
+                    </button>
+                    <button type="button" class="btn btn-lg"
+                            data-bs-toggle="modal"
+                            data-bs-target="#moonInfoModal"
+                            id="eighthPhase">
+                        <img src="assets/Dina/8.png" alt="Eighth Phase (Secondary): Waning Crescent">
+                    </button>
+                </div>
+
+                <!-- The modal that pops up when clicking a moon phase -->
+                <!-- The content of the modal changes depending on which moon phase the user clicked -->
+                <!-- Javascript is used to provide the functionality of moon phase specified content -->
+                <div class="modal fade" id="moonInfoModal" tabindex="-1" aria-hidden="true">
+                    <div class="modal-dialog modal-dialog-centered">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h4 class="modal-title" id="ModelLabel"></h4>
+                                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                            </div>
+                            <div class="modal-body">
+                                <p id="ModelText"></p>
+                            </div>
+                            <div class="modal-footer">
+                                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </section>
+            <!-- End of section 4 -->
+        </main>
+        <!-- End of the main part of the webpage -->
+
+
+
+        <!-- Footer -->
+
+        <footer class="bg-light text-center text-white">
+            <!-- Grid container -->
+            <div class="container p-4 pb-0">
+                <!-- Section: Social media -->
+                <section class="mb-4 icons">
+                    <!-- Facebook -->
+                    <a
+                        class="btn btn-floating m-1"
+                        style="background-color: #3b5998;"
+                        href="https://www.facebook.com/DwayneJohnson"
+                        role="button"
+                    ><i class="fab fa-facebook-f"></i
+                    ></a>
+
+                    <!-- Twitter -->
+                    <a
+                        class="btn btn-floating m-1"
+                        style="background-color: #55acee;"
+                        href="https://twitter.com/elonmusk?ref_src=twsrc%5Egoogle%7Ctwcamp%5Eserp%7Ctwgr%5Eauthor"
+                        role="button"
+                    ><i class="fab fa-twitter"></i
+                    ></a>
+
+                    <!-- Google -->
+                    <a
+                        class="btn btn-floating m-1"
+                        style="background-color: #dd4b39;"
+                        href="assets/catmeme.png"
+                        role="button"
+                    ><i class="fab fa-google"></i
+                    ></a>
+
+                    <!-- Instagram -->
+                    <a
+                        class="btn btn-floating m-1"
+                        style="background-color: #ac2bac;"
+                        href="https://www.instagram.com/dualipa/?hl=en"
+                        role="button"
+                    ><i class="fab fa-instagram"></i
+                    ></a>
+
+                    <!-- Linkedin -->
+                    <a
+                        class="btn btn-floating m-1"
+                        style="background-color: #0082ca;"
+                        href="https://www.linkedin.com/in/williamhgates?original_referer=https%3A%2F%2Fwww.google.com%2F"
+                        role="button"
+                    ><i class="fab fa-linkedin-in"></i
+                    ></a>
+                    <!-- Github -->
+                    <a
+                        class="btn btn-floating m-1"
+                        style="background-color: #000000;"
+                        href="assets/spongebobmeme.png"
+                        role="button"
+                    ><i class="fab fa-github"></i
+                    ></a>
+                </section>
+                <!-- Section: Social media -->
+            </div>
+            <!-- Grid container -->
+
+            <!-- Copyright -->
+            <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2);">
+                ©
+                <script>document.write(new Date().getFullYear())</script>
+                <a href="https://www.thomasmore.be/">Thomas More</a>
+                <span>Author: Dina Boshnaq</span>
+            </div>
+        </footer>
+
+        <!-- Bootstrap and javascript links -->
+        <script src="js/bootstrap.bundle.min.js"></script>
+        <script src="js/Dina1.js"></script>
+    </body>
+</html>

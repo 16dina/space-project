@@ -1,0 +1,252 @@
+@use "sass:color";
+
+.iris {
+  // unique code for student 2
+  // Name student 2: Iris Loret
+
+  background-color: $background;
+  color: white;
+
+  main {
+    animation: fade 2s;
+  }
+
+  @keyframes fade {
+    0% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 1;
+    }
+  }
+
+  .solar-container {
+    z-index: -10;
+  }
+
+  .solar-card {
+    top: 250px;
+  }
+
+  .c-hand {
+    display: none;
+  }
+
+  .left {
+    @include cardGradientLeft;
+  }
+
+  .right {
+    @include cardGradientRight;
+  }
+
+  .card-img {
+    width: auto;
+    max-height: 180px;
+    border-radius: 25px;
+  }
+
+  p {
+    text-align: justify;
+  }
+
+  .accordion-item {
+    box-shadow: 8px 8px 15px black;
+    max-width: 80%;
+    margin-right: auto;
+    margin-left: auto;
+    border-radius: 10px;
+    background: rgb(84, 97, 166);
+    background: radial-gradient(circle, rgba(84, 97, 166, 1) 20%, rgba(55, 64, 108, 1) 45%, rgba(26, 30, 51, 1) 78%);
+  }
+
+  .accordion-button {
+    background-color: rgba(62, 66, 117, 0.5);
+    color: whitesmoke;
+    padding: 8px;
+    font-size: 20px;
+  }
+
+  .fa-arrow-up {
+    bottom: 10px;
+    right: 4px;
+    position: fixed;
+    color: color.scale($background, $lightness: 60%);
+    transition: transform 500ms;
+
+    &:hover {
+      transform: scale(1.3);
+    }
+  }
+
+  .humansInSpace {
+    max-width: 85%;
+
+    img {
+      margin-bottom: 10px;
+    }
+
+    .shadowImg {
+      box-shadow: 8px 8px 8px black;
+    }
+
+    h1 {
+      text-align: center;
+    }
+
+    h2 {
+      @extend h1;
+      margin-top: 20px;
+      margin-bottom: 15px;
+    }
+
+    #astronautImg {
+      position: absolute;
+    }
+
+    #astronaut2 {
+      position: relative;
+      transition: transform 500ms;
+
+      &:hover {
+        transform: scale(1.3);
+      }
+
+    }
+
+    #travelerImg {
+      position: absolute;
+    }
+
+    #apollo112 {
+      position: relative;
+      transition: transform 500ms;
+
+      &:hover {
+        transform: translateX(-18px) scale(1.4);
+      }
+    }
+
+    .divAstronaut {
+      @include backgroundHumansSpace;
+      max-width: 100%;
+    }
+
+    .divTravelers {
+      padding: 20px;
+    }
+
+    .divHealth {
+      @extend .divAstronaut;
+    }
+
+    #buttonReadMore {
+      padding: 8px;
+      margin-left: 8px;
+      margin-bottom: 8px;
+      background-color: rgba(0, 0, 0, 0.5);
+      color: whitesmoke;
+      border: solid 1px whitesmoke;
+      display: block;
+
+      &:hover {
+        color: black;
+        background-color: whitesmoke;
+        border: black solid 1px;
+      }
+    }
+
+    ul {
+      margin-left: auto;
+      margin-right: auto;
+      max-width: 90%;
+
+      li {
+        background-color: color.scale($background, $lightness: 20%);
+        margin-bottom: 20px;
+        border-radius: 5px;
+        padding: 15px;
+        padding-left: 40px;
+        box-shadow: 8px 8px 15px black;
+
+        i {
+          background: rgb(84, 97, 166);
+          background: linear-gradient(180deg, rgba(84, 97, 166, 1) 26%, rgba(55, 64, 108, 1) 59%, rgba(26, 30, 51, 1) 83%);
+          padding: 10px 10px 10px 10px;
+          border-radius: 10px 10px 0 10px;
+          width: 40px;
+          height: 40px;
+          left: 1rem;
+          overflow: hidden;
+          position: absolute;
+          top: -1.3rem;
+
+        }
+      }
+    }
+  }
+
+  #moreText {
+    display: none;
+    animation: fade 1s;
+  }
+
+  #progressBar {
+    --scrollAmount: 0%;
+    background-image: linear-gradient(to top, #cfd9df 0%, #e2ebf0 100%);
+    width: var(--scrollAmount);
+    height: 10px;
+    position: sticky;
+    top: 0;
+    left: 0;
+    z-index: 10;
+  }
+
+  @media screen and (min-width: 768px) {
+    div #list-example {
+      top: 100px;
+      right: 0;
+      position: fixed;
+      overflow: visible;
+    }
+
+    .card {
+      max-width: 85%;
+    }
+
+    .solar-card {
+      top: 200px;
+    }
+
+    .accordion-item {
+      max-width: 80%;
+    }
+
+    .humansInSpace {
+      max-width: 90%;
+
+      h2 {
+        text-align: left;
+      }
+    }
+  }
+
+  @media screen and (min-width: 992px) {
+    .card {
+      max-width: 90%;
+    }
+
+    .c-hand {
+      display: inline;
+    }
+
+    .accordion-item {
+      max-width: 80%;
+    }
+
+    .humansInSpace {
+      max-width: 95%;
+    }
+  }
+}
+

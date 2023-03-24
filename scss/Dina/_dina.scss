@@ -1,0 +1,443 @@
+@use "sass:color";
+// imported font for some elements
+@import url('https://fonts.googleapis.com/css?family=Mukta:700');
+// transition mixin used for the 'learn more' button on the Black Holes page
+@mixin transition($property: all, $duration: 0.45s, $ease: cubic-bezier(0.65,0,.076,1)) {
+  transition: $property $duration $ease;
+}
+
+// First page styling: Moon page
+// unique code for student 3
+// Name student 3: Dina Boshnaq
+.dina {
+  overflow-x: hidden;
+  .background {
+    position: relative;
+    text-align: center;
+  }
+  .centered {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    h1 {
+      font-size: 1rem;
+      color: color.complement($background);
+      box-shadow: 3px 3px 3px black;
+      border: 1px solid black;
+      padding: 10px;
+      background-color: rgba(255,255,255, 0.2);
+    }
+  }
+
+  @include media-breakpoint-up(sm) {
+    .centered {
+      h1 {
+        font-size: 2rem;
+      }
+    }
+  }
+
+  @include media-breakpoint-up(md) {
+    .centered {
+      h1 {
+        font-size: 3rem;
+      }
+    }
+  }
+
+  @include media-breakpoint-up(lg) {
+    .centered {
+      h1 {
+        font-size: 5rem;
+      }
+    }
+  }
+
+  img {
+    width: 100%;
+  }
+  .paragraph {
+    @include transparentBackground()
+  }
+
+  #first {
+    img {
+      border-radius: 50%;
+      animation: fadeIn 3000ms;
+      // height: 100%;
+    }
+    padding: 60px 0;
+    overflow: hidden;
+    p {
+      line-height: 2;
+      text-align: justify;
+      padding-right: 20px;
+      animation: fadeIn 3000ms;
+    }
+
+    @keyframes fadeIn {
+      0% {
+        opacity: 0;
+      }
+      100% {
+        opacity: 100%;
+      }
+    }
+  }
+
+  #second {
+    #title1:hover, #title2:hover {
+      cursor: pointer;
+    }
+    p {
+      text-align: justify;
+      padding: 10px;
+    }
+    li {
+      display: inline-block;
+      padding: 15px;
+      background-color: white;
+      box-shadow: 3px 3px 3px gray;
+      width: 40%;
+      margin: 5px;
+      color: black;
+      list-style-type: none;
+    }
+
+  }
+
+  #third {
+    #carouselTitle {
+      width: 50%;
+      margin-top: 10%;
+      margin-right: auto;
+      margin-left: auto;
+      h2 {
+        text-align: center;
+      }
+      p {
+        text-align: center;
+      }
+      ol {
+        padding-bottom: 10%;
+        width: 100%;
+        li {
+          @include transparentBackground();
+          list-style-type: none;
+          width: 100%;
+          margin: 0;
+          margin-top: 5%;
+        }
+      }
+    }
+    background: $purpleBlue;
+    background: linear-gradient(180deg, $originalBackground 0%, $purpleBlue 100%);
+
+
+    .carousel-item {
+      max-width: 100%;
+      max-height: 600px;
+      position: relative;
+      img {
+        max-height: 600px;
+        width: auto;
+        object-fit: contain;
+        margin-left: auto;
+        margin-right: auto;
+      }
+    }
+    .carousel-caption {
+      width: 25%;
+      padding: 15px;
+      background-color: rgba(26,30,51,0.9);
+      margin-right: auto;
+      margin-left: auto;
+    }
+
+  }
+
+  #fourth {
+    margin-top: 0;
+    background: rgb(102,113,201);
+    background: linear-gradient(180deg, $purpleBlue 0%, $black 100%);
+    #introMoonPhases {
+      position: relative;
+      #text {
+        position: absolute;
+        top: 10px;
+        left: 10px;
+      }
+    }
+    #moonPhases {
+      padding-bottom: 10%;
+      padding-top: 5%;
+      flex-flow: row wrap;
+      img {
+        width: 100px;
+        height: 100px;
+        filter: grayscale(80%);
+      }
+    }
+    .modal-title, .modal-body {
+      color: $background;
+      text-align: center;
+    }
+    h3 {
+     margin-top: 5%;
+      margin-left: 5%;
+    }
+
+  }
+
+  @include media-breakpoint-up(md) {
+    #fourth {
+      padding-top: 10%;
+      #introMoonPhases {
+        position: relative;
+        #text {
+          position: absolute;
+          top: 50px;
+          left: 50px;
+        }
+      }
+    }
+  }
+
+  footer {
+    span {
+      margin-left: 1%;
+    }
+  }
+
+}
+
+// Second page styling: Black Holes page
+// unique code for student 3
+// Name student 3: Dina Boshnaq
+.dina2 {
+  overflow-x: hidden;
+  #title {
+    margin: 10%;
+    h1 {
+      text-align: center;
+      font-size: 5rem;
+    }
+    h2 {
+      text-align: center;
+    }
+  }
+  img {
+    max-width: 100%;
+  }
+
+  #definition {
+    p {
+      max-width: 100%;
+      margin-right: auto;
+      margin-left: auto;
+      text-align: justify;
+      display: none;
+      @include transparentBackground();
+    }
+  }
+
+  @media screen and (min-width: 769px){
+    #definition {
+      position: relative;
+      p {
+        position: absolute;
+        top: 50px;
+        left: 25%;
+        max-width: 50%;
+      }
+    }
+  }
+
+  .card {
+    margin-bottom: 5%;
+  }
+
+  .card-title, .card-text {
+    color: $background;
+  }
+
+  #enter {
+    @include transparentBackground();
+    p {
+      text-align: justify;
+    }
+    img {
+      width: 500px;
+      height: 300px;
+      box-shadow: 3px 3px 3px white;
+      margin-right: auto;
+      margin-left: auto;
+      padding: 0;
+    }
+    #instructions {
+      @include transparentBackground();
+      width: 100%;
+      text-align: center;
+      margin-top: 3%;
+    }
+
+    @media screen and (min-width: 769px){
+      #instructions {
+        width: 50%;
+      }
+    }
+  }
+
+  #close {
+    h2{
+      text-align: center;
+    }
+    h3, h4, p {
+      @extend h2;
+    }
+    #answer {
+      color: $background;
+    }
+    button {
+      color: white;
+      @include transparentBackground();
+    }
+  }
+
+  #real {
+    img {
+      height: auto;
+      width: 100%;
+      box-shadow: 3px 3px 3px white;
+      margin-bottom: 5%;
+    }
+    p, h2 {
+      text-align: center;
+    }
+  }
+
+  button {
+    position: relative;
+    display: inline-block;
+    cursor: pointer;
+    border: 0;
+    vertical-align: middle;
+    text-decoration: none;
+    background: transparent;
+    &.learn-more {
+      width: 12rem;
+      height: auto;
+      .circle {
+        @include transition(all, 0.45s, cubic-bezier(0.65,0,.076,1));
+        position: relative;
+        display: block;
+        width: 3rem;
+        height: 3rem;
+        background: black;
+        border-radius: 1.625rem;
+        .icon {
+          @include transition(all, 0.45s, cubic-bezier(0.65,0,.076,1));
+          position: absolute;
+          top: 0;
+          bottom: 0;
+          margin: auto;
+          background: black;
+          &.arrow {
+            @include transition(all, 0.45s, cubic-bezier(0.65,0,.076,1));
+            left: 0.625rem;
+            width: 1.125rem;
+            height: 0.125rem;
+            &::before {
+              position: absolute;
+              content: '';
+              top: -0.25rem;
+              right: 0.0625rem;
+              width: 0.625rem;
+              height: 0.625rem;
+              border-top: 0.125rem solid #fff;
+              border-right: 0.125rem solid #fff;
+              transform: rotate(45deg);
+            }
+          }
+        }
+      }
+      .button-text {
+        @include transition(all, 0.45s, cubic-bezier(0.65,0,.076,1));
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        padding: 0.75rem 0;
+        margin: 0 0 0 1.85rem;
+        color: black;
+        font-weight: 700;
+        line-height: 1.6;
+        text-align: center;
+        text-transform: uppercase;
+      }
+    }
+    &:hover {
+      .circle {
+        width: 100%;
+        .icon {
+          &.arrow {
+            transform: translate(1rem, 0);
+          }
+        }
+      }
+      .button-text {
+        color: $white;
+      }
+    }
+  }
+
+  #container {
+    text-align: center;
+  }
+
+}
+
+// combined css for the progress bar on both pages
+.dina, .dina2 {
+  #reading-progress {
+    position: fixed;
+    width: 100%;
+    height: 5px;
+    z-index: 9999;
+    top: 0;
+    left: 0;
+  }
+
+  #reading-progress-fill {
+    height: 5px;
+    width: 0;
+    -webkit-transition: width 100ms ease;
+    -o-transition: width 100ms ease;
+    transition: width 100ms ease;
+    background-color: #0000ff;
+  }
+
+  #upBtn {
+    display: none;
+    position: fixed;
+    bottom: 20px;
+    right: 30px;
+    z-index: 99;
+    border: none;
+    outline: none;
+    background-color: white;
+    color: $background;
+    cursor: pointer;
+    padding: 15px;
+    border-radius: 10px;
+    font-size: 18px;
+  }
+
+  #upBtn:hover {
+    background-color: rgba(255,255,255,0.2);
+    color: white;
+  }
+}
+

@@ -1,0 +1,41 @@
+// Functions
+@function orbit-size($base) {
+  $result: sqrt($base / $neptune-distance) * $max-distance + $base-distance;
+  @return $result;
+}
+
+@function object-size($base) {
+  $result: ($base / $jupiter-rad) * $max-rad + $base-rad;
+  @return $result;
+}
+
+@function sqrt($r) {
+  $x0: 1;
+  $x1: $x0;
+ 
+  @for $i from 1 through 10 {
+    $x1: $x0 - ($x0 * $x0 - abs($r)) / (2 * $x0);
+    $x0: $x1;
+  }
+ 
+  @return $x1;
+}
+
+@function asteroids($num, $max, $rad) {
+  $asteroids: 0 0;
+  //$asteroids: (random($max * 10) / 10 + $rad) (random($rad * 100) / 100 + 0rem);
+  @for $i from 1 to $num  {
+    $asteroids: $asteroids, (random(($rad) * 100) / 100 - ($max / 2)) (random(($max - $rad * 6) * 100) / 100 - ($max - $rad * 6) / 2);
+  }
+  @for $i from 1 to $num  {
+    $asteroids: $asteroids, -(random(($rad) * 100) / 100 - ($max / 2)) (random(($max - $rad * 6) * 100) / 100 - ($max - $rad * 6) / 2);
+  }
+  @for $i from 1 to $num  {
+    $asteroids: $asteroids, (random(($max - $rad * 6) * 100) / 100 - ($max - $rad * 6) / 2) (-(random(($rad) * 100) / 100 - ($max / 2)));
+  }
+  @for $i from 1 to $num  {
+    $asteroids: $asteroids, -(random(($max - $rad * 6) * 100) / 100 - ($max - $rad * 6) / 2) (random(($rad) * 100) / 100 - ($max / 2));
+  }
+
+  @return $asteroids;
+}

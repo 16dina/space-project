@@ -1,0 +1,26 @@
+//Links layout
+@use "sass:color";
+
+.iris {
+  .solar-name {
+    a {
+      color: color.scale(color.invert($background), $lightness: 90%);
+    }
+  }
+
+  .copyrightSolar {
+    a {
+      color: gray;
+    }
+  }
+
+  .card-text {
+    a {
+      color: color.scale($background, $lightness: 60%);
+
+      &:hover {
+        color: color.scale($background, $lightness: 40%);
+      }
+    }
+  }
+}

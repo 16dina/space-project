@@ -1,0 +1,61 @@
+// basic layout of all pages
+@use "sass:color";
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: $background;
+  position: relative;
+  font-family: 'Noto Sans', sans-serif;
+  color: $textColor;
+}
+
+::selection {
+  background-color: #54688F;
+}
+
+.icons {
+  a {
+    @include footerIcons();
+  }
+}
+
+footer {
+  position: inherit;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+}
+
+#titleOfWebpage {
+  font-size: 25px;
+  padding-right: 50px;
+}
+
+.navbar-nav {
+  padding-left: 50px;
+  padding-right: 50px;
+}
+
+.nav-item {
+  text-align: center;
+}
+
+
+.btn-floating {
+  transition: transform 500ms;
+
+  &:hover {
+    color: white;
+    transform: scale(1.2);
+  }
+}
+
+
+
+
